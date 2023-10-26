@@ -1,9 +1,12 @@
 import { FC } from 'react'
-import RecipeItem from './recipe-item/RecipeItem'
+import Header from './components/header/Header'
+import RecipeItem from './components/recipe-item/RecipeItem'
 
 const App: FC = () => {
 	return (
 		<div className='flex flex-col justify-start items-center w-screen h-screen overflow-hidden'>
+			<Header />
+
 			<h1 className='mb-10 text-3xl'>Redux Toolkit</h1>
 
 			<section className='flex flex-col justify-center items-center space-y-5 w-[400px]'>
